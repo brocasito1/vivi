@@ -1,191 +1,159 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Amor Por Você</title>
+    <title>Nosso Amor</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Pacifico&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;500;700&family=Pacifico&display=swap"
+        rel="stylesheet">
 </head>
-<body>
-    <div class="floating-elements">
-        <div class="floating-heart heart1"><i class="fas fa-heart"></i></div>
-        <div class="floating-heart heart2"><i class="fas fa-heart"></i></div>
-        <div class="floating-heart heart3"><i class="fas fa-heart"></i></div>
-        <div class="floating-heart heart4"><i class="fas fa-heart"></i></div>
-        <div class="floating-heart heart5"><i class="fas fa-heart"></i></div>
-        <div class="floating-heart heart6"><i class="fas fa-heart"></i></div>
-        <div class="floating-heart heart7"><i class="fas fa-heart"></i></div>
-        <div class="floating-heart heart8"><i class="fas fa-heart"></i></div>
-        <div class="floating-heart heart9"><i class="fas fa-heart"></i></div>
-        <div class="floating-heart heart10"><i class="fas fa-heart"></i></div>
-        <div class="floating-star star1"><i class="fas fa-star"></i></div>
-        <div class="floating-star star2"><i class="fas fa-star"></i></div>
-        <div class="floating-star star3"><i class="fas fa-star"></i></div>
-        <div class="floating-star star4"><i class="fas fa-star"></i></div>
-        <div class="floating-star star5"><i class="fas fa-star"></i></div>
-    </div>
 
-    <div class="side-decorations left">
-        <div class="decoration-item flower1"><i class="fas fa-flower"></i></div>
-        <div class="decoration-item photo-frame frame1">
-            <div class="frame-border">
-                <div class="photo-placeholder" data-position="left1">
-                    <i class="fas fa-image"></i>
-                    <p>Foto lateral</p>
-                </div>
-            </div>
-        </div>
-        <div class="decoration-item hearts-group">
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-        </div>
-        <div class="decoration-item photo-frame frame2">
-            <div class="frame-border">
-                <div class="photo-placeholder" data-position="left2">
-                    <i class="fas fa-image"></i>
-                    <p>Foto lateral</p>
-                </div>
-            </div>
-        </div>
-        <div class="decoration-item ribbon"></div>
-    </div>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
 
     <div class="container">
         <header>
-            <div class="header-decoration left"></div>
-            <h1>Meu Amor Por Você</h1>
-            <div class="header-decoration right"></div>
-            <div class="heart-container">
-                <div class="heart-wrapper">
-                    <div class="heart"></div>
-                    <div class="heart-glow"></div>
-                </div>
+            <div class="header-content">
+                <div class="fancy-heart left"></div>
+                <h1 class="title">Nosso Amor</h1>
+                <div class="fancy-heart right"></div>
             </div>
         </header>
 
-        <section class="counter-section">
-            <div class="section-title">
-                <i class="fas fa-clock left-icon"></i>
-                <h2>Estou te amando há:</h2>
-                <i class="fas fa-clock right-icon"></i>
-            </div>
-            <div class="counter">
-                <div class="time-unit">
-                    <span id="years">0</span>
-                    <p>Anos</p>
+        <main>
+            <div class="content-wrapper">
+                <!-- Fotos laterais esquerda -->
+                <div class="side-photos left">
+                    <div class="photo-placeholder side" data-number="1">
+                        <img src="Fotos/1.jpg" alt="Descrição da foto"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                    </div>
+                    <div class="photo-placeholder side" data-number="2">
+                        <img src="Fotos/2.jpg" alt="Descrição da foto"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                    </div>
+                    <div class="photo-placeholder side" data-number="3">
+                        <img src="Fotos/3.jpg" alt="Descrição da foto"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                    </div>
+                    <div class="photo-placeholder side" data-number="4">
+                        <img src="Fotos/4.jpg" alt="Descrição da foto"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                    </div>
                 </div>
-                <div class="time-unit">
-                    <span id="months">0</span>
-                    <p>Meses</p>
-                </div>
-                <div class="time-unit">
-                    <span id="days">0</span>
-                    <p>Dias</p>
-                </div>
-                <div class="time-unit">
-                    <span id="hours">0</span>
-                    <p>Horas</p>
-                </div>
-                <div class="time-unit">
-                    <span id="minutes">0</span>
-                    <p>Minutos</p>
-                </div>
-                <div class="time-unit">
-                    <span id="seconds">0</span>
-                    <p>Segundos</p>
-                </div>
-            </div>
-            <div class="date-input">
-                <p>Defina a data em que nós nos conhecemos:</p>
-                <input type="date" id="start-date">
-                <button id="set-date">Definir Data <i class="fas fa-heart"></i></button>
-            </div>
-        </section>
 
-        <section class="gallery-section">
-            <div class="section-title">
-                <i class="fas fa-camera left-icon"></i>
-                <h2>Nossos Momentos Especiais</h2>
-                <i class="fas fa-camera right-icon"></i>
-            </div>
-            <div class="gallery" id="photo-gallery">
-                <!-- As fotos serão adicionadas aqui pelo JavaScript -->
-                <div class="photo-placeholder main-photo" data-position="main1">
-                    <i class="fas fa-image"></i>
-                    <p>Adicione sua foto aqui</p>
-                </div>
-                <div class="photo-placeholder main-photo" data-position="main2">
-                    <i class="fas fa-image"></i>
-                    <p>Adicione sua foto aqui</p>
-                </div>
-                <div class="photo-placeholder main-photo" data-position="main3">
-                    <i class="fas fa-image"></i>
-                    <p>Adicione sua foto aqui</p>
-                </div>
-                <div class="photo-placeholder main-photo" data-position="main4">
-                    <i class="fas fa-image"></i>
-                    <p>Adicione sua foto aqui</p>
-                </div>
-                <div class="photo-placeholder main-photo" data-position="main5">
-                    <i class="fas fa-image"></i>
-                    <p>Adicione sua foto aqui</p>
-                </div>
-                <div class="photo-placeholder main-photo" data-position="main6">
-                    <i class="fas fa-image"></i>
-                    <p>Adicione sua foto aqui</p>
-                </div>
-            </div>
-        </section>
+                <!-- Conteúdo central -->
+                <div class="center-content">
+                    <div class="counter-section">
+                        <h2>Nos conhecemos 22/03/2025</h2>
+                        <div class="counter">
+                            <div class="counter-item">
+                                <span id="days" class="counter-value">0</span>
+                                <span class="counter-label">Dias</span>
+                            </div>
+                            <div class="counter-item">
+                                <span id="hours" class="counter-value">0</span>
+                                <span class="counter-label">Horas</span>
+                            </div>
+                            <div class="counter-item">
+                                <span id="minutes" class="counter-value">0</span>
+                                <span class="counter-label">Minutos</span>
+                            </div>
+                            <div class="counter-item">
+                                <span id="seconds" class="counter-value">0</span>
+                                <span class="counter-label">Segundos</span>
+                            </div>
+                        </div>
+                    </div>
 
-        <section class="message-section">
-            <div class="section-title">
-                <i class="fas fa-envelope left-icon"></i>
-                <h2>Uma Mensagem Especial Para Você</h2>
-                <i class="fas fa-envelope right-icon"></i>
+                    <div class="special-phrase">
+                        <div class="heart-decoration top-left"></div>
+                        <div class="heart-decoration top-right"></div>
+                        <h3>Frase Especial</h3>
+                        <p> "Você é o meu hoje e todos os amanhãs. Cada momento ao seu lado me lembra que o amor mais lindo é aquele que encontrei em você." </p>
+                        <div class="heart-decoration bottom-left"></div>
+                        <div class="heart-decoration bottom-right"></div>
+                    </div>
+
+                    <div class="photo-gallery">
+                        <h3>Nossas Memórias</h3>
+                        <div class="gallery-container">
+                            <!-- 8 fotos na galeria central -->
+                            <div class="photo-placeholder side" data-number="5">
+                                <img src="Fotos/5.jpg" alt="Descrição da foto"
+                                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                            </div>
+                            <div class="photo-placeholder side" data-number="6">
+                                <img src="Fotos/6.jpg" alt="Descrição da foto"
+                                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                            </div>
+                            <div class="photo-placeholder side" data-number="7">
+                                <img src="Fotos/7.jpg" alt="Descrição da foto"
+                                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                            </div>
+                            <div class="photo-placeholder side" data-number="8">
+                                <img src="Fotos/8.jpg" alt="Descrição da foto"
+                                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                            </div>
+                            <div class="photo-placeholder side" data-number="9">
+                                <img src="Fotos/9.jpg" alt="Descrição da foto"
+                                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                            </div>
+                            <div class="photo-placeholder side" data-number="10">
+                                <img src="Fotos/10.jpg" alt="Descrição da foto"
+                                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                            </div>
+                            <div class="photo-placeholder side" data-number="11">
+                                <img src="Fotos/11.jpg" alt="Descrição da foto"
+                                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                            </div>
+                            <div class="photo-placeholder side" data-number="12">
+                                <img src="Fotos/12.jpg" alt="Descrição da foto"
+                                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fotos laterais direita -->
+                <div class="side-photos right">
+                    <div class="photo-placeholder side" data-number="13">
+                        <img src="Fotos/13.jpg" alt="Descrição da foto"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                    </div>
+                    <div class="photo-placeholder side" data-number="14">
+                        <img src="Fotos/14.jpg" alt="Descrição da foto"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                    </div>
+                    <div class="photo-placeholder side" data-number="15">
+                        <img src="Fotos/15.jpg" alt="Descrição da foto"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                    </div>
+                    <<div class="photo-placeholder side" data-number="16">
+                        <img src="Fotos/16.jpg" alt="Descrição da foto"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                    </div>
+                </div>
             </div>
-            <div class="message">
-                <div class="message-decoration top"></div>
-                <p id="love-message">Você é a pessoa mais especial do mundo para mim. Cada momento ao seu lado é um presente que guardo com carinho no meu coração. Te amo mais a cada dia que passa!</p>
-                <div class="message-decoration bottom"></div>
-            </div>
-        </section>
+        </main>
 
         <footer>
-            <div class="footer-decoration"></div>
-            <p>Feito com <span class="heart-icon">❤️</span> para você</p>
-            <div class="footer-decoration"></div>
+            <div class="footer-hearts">
+                <div class="fancy-heart small"></div>
+                <div class="fancy-heart medium"></div>
+                <div class="fancy-heart small"></div>
+            </div>
+            <p class="footer-text">Feito com amor para você</p>
         </footer>
-    </div>
-
-    <div class="side-decorations right">
-        <div class="decoration-item flower2"><i class="fas fa-flower"></i></div>
-        <div class="decoration-item photo-frame frame3">
-            <div class="frame-border">
-                <div class="photo-placeholder" data-position="right1">
-                    <i class="fas fa-image"></i>
-                    <p>Foto lateral</p>
-                </div>
-            </div>
-        </div>
-        <div class="decoration-item hearts-group">
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-        </div>
-        <div class="decoration-item photo-frame frame4">
-            <div class="frame-border">
-                <div class="photo-placeholder" data-position="right2">
-                    <i class="fas fa-image"></i>
-                    <p>Foto lateral</p>
-                </div>
-            </div>
-        </div>
-        <div class="decoration-item ribbon"></div>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
